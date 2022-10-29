@@ -22,7 +22,8 @@ import { Nav } from "reactstrap";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 
-import logo from "logo.svg";
+import logo from "../../assets/img/IconBaruSatuDesa.png";
+
 
 var ps;
 
@@ -53,7 +54,7 @@ function Sidebar(props) {
     >
       <div className="logo">
         <a
-          href="https://www.creative-tim.com"
+          href="#"
           className="simple-text logo-mini"
         >
           <div className="logo-img">
@@ -61,33 +62,37 @@ function Sidebar(props) {
           </div>
         </a>
         <a
-          href="https://www.creative-tim.com"
+          href="#"
           className="simple-text logo-normal"
         >
-          Creative Tim
+          Satu Desa
         </a>
       </div>
       <div className="sidebar-wrapper" ref={sidebar}>
-        <Nav>
+      <Nav>
           {props.routes.map((prop, key) => {
-            return (
-              <li
-                className={
-                  activeRoute(prop.path) + (prop.pro ? " active-pro" : "")
-                }
-                key={key}
-              >
-                <NavLink
-                  to={prop.layout + prop.path}
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  <i className={prop.icon} />
-                  <p>{prop.name}</p>
-                </NavLink>
-              </li>
-            );
-          })}
+              if(prop.sidebar){
+                return (
+                  <li
+                    className={
+                      activeRoute(prop.path) + (prop.pro ? " active-pro" : "")
+                    }
+                    key={key}
+                  >
+                    <NavLink
+                      to={prop.layout + prop.path}
+                      className="nav-link"
+                      activeClassName="active"
+                    >
+                      <i className={prop.icon} />
+                      <p>{prop.name}</p>
+                    </NavLink>
+                  </li>
+                );
+              }
+              return null
+          }
+          )}
         </Nav>
       </div>
     </div>

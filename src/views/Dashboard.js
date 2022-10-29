@@ -27,7 +27,11 @@ import {
   CardFooter,
   CardTitle,
   Row,
-  Col
+  Col,
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText
 } from "reactstrap";
 // core components
 import {
@@ -43,6 +47,20 @@ function Dashboard() {
         <Row>
           <Col lg="3" md="6" sm="6">
             <Card className="card-stats">
+
+              <CardHeader>
+                <form>
+                  <InputGroup className="no-border">
+                    <Input placeholder="Search..." />
+                    <InputGroupAddon addonType="append">
+                      <InputGroupText>
+                        <i className="nc-icon nc-zoom-split" />
+                      </InputGroupText>
+                    </InputGroupAddon>
+                  </InputGroup>
+                </form>
+              </CardHeader>
+
               <CardBody>
                 <Row>
                   <Col md="4" xs="5">
