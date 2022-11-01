@@ -10,7 +10,7 @@ class ListJenisDokumen extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="content" style={{ fontSize: 12 }}>
                 <Row>
                     <Col md="12">
                         <Card>
@@ -27,7 +27,7 @@ class ListJenisDokumen extends Component {
                                 <Table striped bordered hover size="sm" responsive>
 
 
-                                    <thead>
+                                    <thead className='text-primary'>
                                         <tr>
                                             <th>Jenis Dokumen</th>
                                             <th>Persyaratan</th>
@@ -48,11 +48,15 @@ class ListJenisDokumen extends Component {
 
 
                                                 <Col>
-                                                    <Link className='btn btn-warning' to={'/admindesa/jenisdokumen/edit'}>
+                                                    {/* <Link className='btn btn-warning' to={'/admindesa/jenisdokumen/edit'}>
                                                         edit
-                                                    </Link>
+                                                    </Link> */}
+                                                    <Button color='warning' className='ml-2'>
+                                                        <i className='nc-icon nc-ruler-pencil'></i>
+                                                    </Button>
+
                                                     <Button color='danger' className='ml-2'>
-                                                        delete
+                                                        <i className='nc-icon nc-basket'></i>
                                                     </Button>
                                                 </Col>
                                             </td>

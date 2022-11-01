@@ -38,7 +38,7 @@ export default class Login extends Component {
                                     />
                                 </FormGroup>
 
-                                <FormGroup>
+                                {/* <FormGroup>
                                     <label><strong>Akses</strong></label>
                                     <Input type="select" name="akses" onChange={(event) => this.handleChanges(event)}>
                                         <option value="">--Pilih Akses--</option>
@@ -46,7 +46,7 @@ export default class Login extends Component {
                                         <option>Admin Desa</option>
                                         <option>Warga</option>
                                     </Input>
-                                </FormGroup>
+                                </FormGroup> */}
 
 
                                 <div className="d-grid gap-2 text-right">

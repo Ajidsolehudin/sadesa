@@ -10,7 +10,7 @@ class ListDataDesa extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="content" style={{ fontSize: 12 }}>
         <Row>
           <Col md="12">
             <Card>
@@ -23,7 +23,7 @@ class ListDataDesa extends Component {
               </CardHeader>
 
               <CardBody>
-                <Table striped bordered hover responsive>
+                <Table striped bordered hover size="sm" responsive>
 
                   <thead className='text-primary'>
                     <tr>
@@ -61,12 +61,16 @@ class ListDataDesa extends Component {
                           </Link> */}
 
                         <div>
-                          <Link className='btn btn-warning' to={'/admin/datadesa/edit'}>
-                            edit
-                          </Link>
+                          {/* <Link className='btn btn-warning' to={'/admin/datadesa/edit'}>
+                          <i className='nc-icon nc-ruler-pencil'></i>
+                          </Link> */}
+
+                          <Button color='warning' className='ml-2' onClick={() => this.props.history.push("/admin/datadesa/edit")}>
+                            <i className='nc-icon nc-ruler-pencil'></i>
+                          </Button>
 
                           <Button color='danger' className='ml-2'>
-                            delete
+                            <i className='nc-icon nc-basket'></i>
                           </Button>
                         </div>
                       </td>
@@ -89,21 +93,26 @@ class ListDataDesa extends Component {
 
 
                       <td>
-                        <Link className='btn btn-warning' to={'/admin/datadesa/edit/'}>
-                          edit
-                        </Link>
+                        {/* <Link className='btn btn-warning'>
+                            <i className='nc-icon nc-ruler-pencil'></i>
+                          </Link> */}
 
-                        {/* <Button color='warning' className='ml-2' to={'/admin/datadesa/edit/'>
-                            edit
-                          </Button> */}
+                        <div>
+                          {/* <Link className='btn btn-warning' to={'/admin/datadesa/edit'}>
+                          <i className='nc-icon nc-ruler-pencil'></i>
+                          </Link> */}
 
-                        <Button color='danger' className='ml-2'>
-                          delete
-                        </Button>
+                          <Button color='warning' className='ml-2' onClick={() => this.props.history.push("/admin/datadesa/edit")}>
+                            <i className='nc-icon nc-ruler-pencil'></i>
+                          </Button>
+
+                          <Button color='danger' className='ml-2'>
+                            <i className='nc-icon nc-basket'></i>
+                          </Button>
+                        </div>
                       </td>
 
                     </tr>
-
                   </tbody>
                 </Table>
               </CardBody>

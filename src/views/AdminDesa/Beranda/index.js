@@ -10,7 +10,7 @@ class Beranda extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="content" style={{fontSize: 12}}>
                 <Row>
                     <Col md="12">
                         <Card>

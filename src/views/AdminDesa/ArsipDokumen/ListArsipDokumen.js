@@ -10,7 +10,7 @@ class ListArsipDokumen extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="content" style={{ fontSize: 12 }}>
                 <Row>
                     <Col md="12">
                         <Card>
@@ -27,7 +27,7 @@ class ListArsipDokumen extends Component {
                                 <Table striped bordered hover size="sm" responsive>
 
 
-                                    <thead>
+                                    <thead className='text-primary'>
                                         <tr>
                                             <th>NIK</th>
                                             <th>Nama Penduduk</th>
@@ -45,15 +45,15 @@ class ListArsipDokumen extends Component {
                                             <td>Sukaasih</td>
                                             <td>SURAT KETERANGAN DOMISILI</td>
                                             <td>
-                                                <Link className='btn btn-success' to={'/'}>
-                                                    Lihat
-                                                </Link>
+                                                <Button color='success' className='ml-2'>
+                                                    <i className='nc-icon nc-alert-circle-i'></i>
+                                                </Button>
                                             </td>
                                             <td>
                                                 <Col>
 
                                                     <Button color='danger' className='ml-2'>
-                                                        delete
+                                                        <i className='nc-icon nc-basket'></i>
                                                     </Button>
                                                 </Col>
                                             </td>

@@ -9,7 +9,7 @@ class ListDataAdminDesa extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="content" style={{fontSize: 12}}>
         <Row>
           <Col md="12">
             <Card>
@@ -17,12 +17,12 @@ class ListDataAdminDesa extends Component {
               <CardHeader>
                 <CardTitle tag="h4">Data Admin Desa</CardTitle>
                 <Link to="/admin/dataadmindesa/tambah" className='btn btn-primary'>
-                  Tambah Admin Desa
+                  Tambah Data
                 </Link>
               </CardHeader>
 
               <CardBody>
-                <Table>
+                <Table striped bordered hover size="sm" responsive>
 
                   <thead className='text-primary'>
                     <tr>
@@ -47,7 +47,7 @@ class ListDataAdminDesa extends Component {
                           </Link> */}
 
                         <Button color='danger' className='ml-2'>
-                          delete
+                          <i className='nc-icon nc-basket'></i>
                         </Button>
                       </td>
                     </tr>
@@ -64,7 +64,7 @@ class ListDataAdminDesa extends Component {
                           </Link> */}
 
                         <Button color='danger' className='ml-2'>
-                          delete
+                          <i className='nc-icon nc-basket'></i>
                         </Button>
                       </td>
                     </tr>

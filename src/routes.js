@@ -33,6 +33,8 @@ import { TambahDataPenduduk } from "views/AdminDesa";
 import { ListDataPenduduk } from "views/AdminDesa";
 import { Beranda } from "views/AdminDesa";
 import Dashboard from "views/AdminUtama/Dashboard/index.js";
+import ListLaporan from "views/AdminUtama/Laporan/ListLaporan";
+import ListRekapitulasi from "views/AdminUtama/Rekapitulasi/ListRekapitulasi";
 import Icons from "views/Icons.js";
 import UserPage from "views/User.js";
 
@@ -81,6 +83,22 @@ var routes = [
     component: EditDataDesa,
     layout: "/admin",
     sidebar: false
+  },
+  {
+    path: "/rekapitulasi",
+    name: "Rekapitulasi",
+    icon: "nc-icon nc-vector",
+    component: ListRekapitulasi,
+    layout: "/admin",
+    sidebar: true
+  },
+  {
+    path: "/laporan",
+    name: "Laporan",
+    icon: "nc-icon nc-chart-pie-36",
+    component: ListLaporan,
+    layout: "/admin",
+    sidebar: true
   },
   {
     path: "/beranda",

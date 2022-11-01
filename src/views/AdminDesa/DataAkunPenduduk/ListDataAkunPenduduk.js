@@ -10,7 +10,7 @@ class ListDataAkunPenduduk extends Component {
 
   render() {
     return (
-      <div className="content">
+      <div className="content" style={{ fontSize: 12 }}>
         <Row>
           <Col md="12">
             <Card>
@@ -27,7 +27,7 @@ class ListDataAkunPenduduk extends Component {
                 <Table striped bordered hover size="sm" responsive>
 
 
-                  <thead>
+                  <thead className='text-primary'>
                     <tr>
                       <th>NIK</th>
                       <th>Nama Lengkap</th>
@@ -50,9 +50,9 @@ class ListDataAkunPenduduk extends Component {
                             <i className='nc-icon nc-ruler-pencil'></i>
                           </Link> */}
 
-                        <Col>       
+                        <Col>
                           <Button color='danger' className='ml-2'>
-                            delete
+                            <i className='nc-icon nc-basket'></i>
                           </Button>
                         </Col>
                       </td>

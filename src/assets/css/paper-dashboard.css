@@ -3027,8 +3027,8 @@ License - nucleoapp.com/license/
     padding-bottom: 0; }
 
 .table > thead > tr > th {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 500;
   padding-bottom: 0;
   text-transform: uppercase;
   border: 0; }
