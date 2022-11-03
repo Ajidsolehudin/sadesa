@@ -9,5 +9,8 @@ import TambahJenisDokumen from './JenisDokumen/TambahJenisDokumen'
 import EditJenisDokumen from './JenisDokumen/EditJenisDokumen'
 import ListArsipDokumen from './ArsipDokumen/ListArsipDokumen'
 import TambahArsipDokumen from './ArsipDokumen/TambahArsipDokumen'
+import ListDataAkunRW from './DataAkunRW/ListDataAkunRW'
+import TambahAkunRW from './DataAkunRW/TambahAkunRW'
+import ListPengajuan from './Pengajuan/ListPengajuan'
 
-export {Beranda, ListDataPenduduk, TambahDataPenduduk, EditDataPenduduk, ListDataAkunPenduduk, TambahAkunPenduduk, ListJenisDokumen, TambahJenisDokumen, EditJenisDokumen, ListArsipDokumen, TambahArsipDokumen}
+export {Beranda, ListDataPenduduk, TambahDataPenduduk, EditDataPenduduk, ListDataAkunPenduduk, TambahAkunPenduduk, ListJenisDokumen, TambahJenisDokumen, EditJenisDokumen, ListArsipDokumen, TambahArsipDokumen, ListDataAkunRW, TambahAkunRW, ListPengajuan}

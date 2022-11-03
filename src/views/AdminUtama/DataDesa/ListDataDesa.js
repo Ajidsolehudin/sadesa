@@ -60,7 +60,7 @@ class ListDataDesa extends Component {
                             <i className='nc-icon nc-ruler-pencil'></i>
                           </Link> */}
 
-                        <div>
+                        <div className='d-flex'>
                           {/* <Link className='btn btn-warning' to={'/admin/datadesa/edit'}>
                           <i className='nc-icon nc-ruler-pencil'></i>
                           </Link> */}

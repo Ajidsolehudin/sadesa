@@ -10,7 +10,7 @@ class ListDataPenduduk extends Component {
 
   render() {
     return (
-      <div className="content" style={{fontSize: 12}}>
+      <div className="content" style={{ fontSize: 12 }}>
         <Row>
           <Col md="12">
             <Card>
@@ -38,7 +38,7 @@ class ListDataPenduduk extends Component {
                       <th>WNI/WNA</th>
                       <th>Nomor Handphone</th>
                       <th>Action</th>
-                      
+
                     </tr>
                   </thead>
 
@@ -58,24 +58,25 @@ class ListDataPenduduk extends Component {
                         {/* <Link className='btn btn-warning'>
                             <i className='nc-icon nc-ruler-pencil'></i>
                           </Link> */}
-
-                        <Col>
-                          {/* <Link className='btn btn-warning' to={'/admindesa/datapenduduk/edit'}>
-                            edit
-                          </Link> */}
-
+                        <div className='d-flex'>
                           <Button color='warning' className='ml-2'>
-                          <i className='nc-icon nc-ruler-pencil'></i>
+                            <i className='nc-icon nc-ruler-pencil'></i>
                           </Button>
 
                           <Button color='danger' className='ml-2'>
-                          <i className='nc-icon nc-basket'></i>
+                            <i className='nc-icon nc-basket'></i>
                           </Button>
+                        </div>
+                        {/* <Link className='btn btn-warning' to={'/admindesa/datapenduduk/edit'}>
+                            edit
+                          </Link> */}
 
-                        </Col>
+
                       </td>
 
                     </tr>
+
+                    
 
                   </tbody>
                 </Table>

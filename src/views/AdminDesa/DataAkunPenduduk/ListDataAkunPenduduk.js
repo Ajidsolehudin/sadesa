@@ -33,6 +33,7 @@ class ListDataAkunPenduduk extends Component {
                       <th>Nama Lengkap</th>
                       <th>Nama Pengguna</th>
                       <th>Password</th>
+                      <th>Detail</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -43,6 +44,12 @@ class ListDataAkunPenduduk extends Component {
                       <td>NURJAMAN</td>
                       <td><i>@nurjaman</i></td>
                       <td>sadesa24</td>
+
+                        <td>
+                          <Button color='success' className='ml-2'>
+                            <i className='nc-icon nc-alert-circle-i'></i>
+                          </Button>
+                        </td>
 
 
                       <td>

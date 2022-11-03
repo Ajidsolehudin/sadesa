@@ -26,6 +26,9 @@ import { ListJenisDokumen } from "views/AdminDesa";
 import { EditJenisDokumen } from "views/AdminDesa";
 import { TambahArsipDokumen } from "views/AdminDesa";
 import { ListArsipDokumen } from "views/AdminDesa";
+import { TambahAkunRW } from "views/AdminDesa";
+import { ListPengajuan } from "views/AdminDesa";
+import { ListDataAkunRW } from "views/AdminDesa";
 import { TambahJenisDokumen } from "views/AdminDesa";
 import { TambahAkunPenduduk } from "views/AdminDesa";
 import { EditDataPenduduk } from "views/AdminDesa";
@@ -37,6 +40,10 @@ import ListLaporan from "views/AdminUtama/Laporan/ListLaporan";
 import ListRekapitulasi from "views/AdminUtama/Rekapitulasi/ListRekapitulasi";
 import Icons from "views/Icons.js";
 import UserPage from "views/User.js";
+import { TrackingDokumen } from "views/Warga";
+import { TambahPersyaratan } from "views/Warga";
+import { BuatPengajuan } from "views/Warga";
+import { ListProfilWarga } from "views/Warga";
 
 var routes = [
   {
@@ -133,6 +140,22 @@ var routes = [
     sidebar: false
   },
   {
+    path: "/dataakunrw",
+    name: "Data Akun RW",
+    icon: "nc-icon nc-badge",
+    component: ListDataAkunRW,
+    layout: "/admindesa",
+    sidebar: true
+  },
+  {
+    path: "/dataakunrw/tambah",
+    name: "Tambah Akun RW",
+    icon: "nc-icon nc-circle-10",
+    component: TambahAkunRW,
+    layout: "/admindesa",
+    sidebar: false
+  },
+  {
     path: "/dataakunpenduduk",
     name: "Data Akun Penduduk",
     icon: "nc-icon nc-key-25",
@@ -173,6 +196,14 @@ var routes = [
     sidebar: false
   },
   {
+    path: "/pengajuan",
+    name: "Pengajuan",
+    icon: "nc-icon nc-tv-2",
+    component: ListPengajuan,
+    layout: "/admindesa",
+    sidebar: true
+  },
+  {
     path: "/arsipdokumen",
     name: "Arsip Dokumen",
     icon: "nc-icon nc-single-copy-04",
@@ -186,6 +217,38 @@ var routes = [
     icon: "nc-icon nc-single-copy-04",
     component: TambahArsipDokumen,
     layout: "/admindesa",
+    sidebar: false
+  },
+  {
+    path: "/beranda",
+    name: "Beranda",
+    icon: "nc-icon nc-single-copy-04",
+    component: ListProfilWarga,
+    layout: "/warga",
+    sidebar: true
+  },
+  {
+    path: "/buatpengajuan",
+    name: "Buat Pengajuan",
+    icon: "nc-icon nc-single-copy-04",
+    component: BuatPengajuan,
+    layout: "/warga",
+    sidebar: true
+  },
+  {
+    path: "/pengajuan",
+    name: "Tracking Dokumen",
+    icon: "nc-icon nc-single-copy-04",
+    component: TrackingDokumen,
+    layout: "/warga",
+    sidebar: true
+  },
+  {
+    path: "/tambahpersyaratan",
+    name: "Tambah Persyaratan",
+    icon: "nc-icon nc-single-copy-04",
+    component: TambahPersyaratan,
+    layout: "/warga",
     sidebar: false
   },
   {
